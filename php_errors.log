@@ -1,0 +1,15 @@
+[26-Jun-2017 07:04:16 UTC] PHP Warning:  include(rota.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php on line 4
+[26-Jun-2017 07:04:16 UTC] PHP Stack trace:
+[26-Jun-2017 07:04:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php:0
+[26-Jun-2017 07:04:16 UTC] PHP Warning:  include(): Failed opening 'rota.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php on line 4
+[26-Jun-2017 07:04:16 UTC] PHP Stack trace:
+[26-Jun-2017 07:04:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php:0
+[26-Jun-2017 07:04:16 UTC] PHP Fatal error:  Class 'Item' not found in /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php on line 37
+[26-Jun-2017 07:04:16 UTC] PHP Stack trace:
+[26-Jun-2017 07:04:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php:0
+[26-Jun-2017 07:04:59 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php on line 40
+[26-Jun-2017 07:04:59 UTC] PHP Stack trace:
+[26-Jun-2017 07:04:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php:0
+[26-Jun-2017 07:05:48 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php on line 40
+[26-Jun-2017 07:05:48 UTC] PHP Stack trace:
+[26-Jun-2017 07:05:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/PBL_SENAI/pblcam/salva_item.php:0

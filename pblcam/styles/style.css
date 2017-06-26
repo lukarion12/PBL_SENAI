@@ -1,0 +1,16 @@
+.navbar-default .navbar-nav li a:hover{
+    background-color: #777;
+}
+
+.meu-input-group{
+    margin-bottom: 10px;
+}
+
+.meu-grupo-addon{
+    border-radius: 3px !important;
+    border: 1px solid #CCC !important;
+}
+
+.espaco-radio{
+    margin: 3px 0;
+}
