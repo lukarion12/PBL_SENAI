@@ -3,6 +3,12 @@
 <head>
      <meta charset="UTF-8">
     <title> Atividades - Revisão PHP </title>
+    <style type="text/css">
+        span {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1> Atividades de Revisão PHP </h1>
@@ -182,6 +188,141 @@
     baskhara(2,0,-45);
     baskhara($a, $b, $c);
     baskhara($a, 10, $b);
+    
+    /* **************************** ATIVIDADE 05 **************************** */
+
+    echo "<h3> Atividade 05 </h3>";
+    echo "<h4> Laço Condicionais </h4>";
+    
+    /* 
+        Programa loja de roupas, escolher o tamanho da roupa P, M, G, GG e 
+        listar marcas de roupas por tamanho
+            
+            Recebe o tamanho da cintura 
+                se cintura menor ou igual que 36 > P
+                se cintura maior que 36 e menor ou igual a 44 > M
+                se cintura maior que 44 e menor que 48 > G
+                se cintura maior ou igual a 48 > GG
+            
+            Recebe o tamanho P, M, G, GG e diz quais as marcas
+                P: "Luiz Vuton, Caralessima"
+                M: "Microupa or Macroupa"
+                G: "GoldulaLight"
+                GG: "Dolce e Gordura"
+    */
+    
+    /*
+    if(condicao1){
+        
+    } elseif(condicao2) {
+        
+    } elseif(condicao3) {
+        
+    } else {
+        
+    }
+    
+    switch(variavel){
+        case 'P': echo "...";
+    }
+    */
+    
+    /* Futuramente por isso dentro de um INPUT :p */
+    
+    $cintura = 30;
+    $tamanho = '';
+    
+    if ($cintura <= 36){
+        echo "seu tamanho é P: <br>";
+        $tamanho = 'P';
+    } 
+    elseif (($cintura >36) and ($cintura <= 44)) {
+        echo "seu tamanho é M: <br>";
+        $tamanho = 'M';
+    }
+    elseif (($cintura >44) and ($cintura < 48)) {
+        echo "seu tamanho é G: <br>";
+        $tamanho = 'G';
+    }
+    else{
+        echo "seu tamanho é GG: <br>";
+        $tamanho = 'GG';
+    }
+    
+    echo "PARA O SEU TAMANHO NOSSA LOJA DISPONIBILIZA AS ROUPAS DA MARCA <br>";
+    
+    switch ($tamanho) {
+        case 'P':
+            echo "Luiz Vuton, Caralessima <br>";
+            break;
+        case 'M':
+            echo "'Microupa or Macroupa'<br>";
+            break;
+        case 'G':
+            echo "'GoldulaLight'<br>";
+            break;
+        case 'GG':   
+            echo "'Dolce e Gordura'<br>";
+            break;
+        
+    }
+
+    /* **************************** ATIVIDADE 06 **************************** */
+
+    echo "<h3> Atividade 06 </h3>";
+    echo "<h4> Laços de Repetição </h4>";
+    
+    /* Colorir Primos, recebe um array de números e colore de verde os pares, 
+       azul os impares e vermelho os primos */
+    
+    $numeros = array(1, 2, 3, 4, 5, 6, 7, 10, 12, 9, 53, 67, 88, 89, 90, 934);
+    
+    /*
+        
+        Estrutura do for inicializacao ; condicao ; incremento se a condição
+        for verdade executa o código e após isso incrementa, até que a condição
+        seja FALSA.
+        
+        count(vetor) --> Retorna o numero de elementos do array
+        
+        for($i = 0; $i < count($numeros); $i++){
+            if($numeros[$i] ... )
+            
+        }
+    
+        PAR   = <h5 style="background-color:green">n</h5>
+        IMPAR = <h5 style="background-color:blue">n</h5>
+        PRIMO = <h5 style="background-color:red">n</h5>
+    
+    */
+    function verificar_primo ($a){
+        if ($a==0){
+            return false;
+        }
+        elseif ($a == 1 or $a == 2 or $a == 3){
+            return tr;
+        }
+        for($i = 2; $i <$a/2; $i++){
+            if($a % $i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    for($i = 0; $i < count($numeros); $i++){
+        
+        if (verificar_primo($numeros[$i])){
+            echo "<span style=\"background-color:red\">".$numeros[$i]."</span>";
+        }
+        elseif($numeros[$i] % 2 == 0){
+            echo "<span style=\"background-color:green\">".$numeros[$i]."</span>";
+        } 
+        else{
+            echo "<span style=\"background-color:blue\">".$numeros[$i]."</span>";
+        }
+    }
+    
 ?>
 </body>
 </html>
