@@ -3,11 +3,6 @@
 /* Define uma rota */
 include("item.php");
 
-/* Salva os items cadastrados */
-if(!isset($items_cadastrados)){
-    $items_cadastrados = array();
-}
-
 /* Verifica se recebemos um POST */
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(!isset($_POST["nome-cliente"]) and (strlen($_POST["nome-cliente"]) == 0)){
@@ -33,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     else{
         
         /* Se tá tudo OK */
-        $nome_cliente = $_POST["nome-clliente"];
+        $nome_cliente = $_POST["nome-cliente"];
         $descricao_produto = $_POST["descricao-produto"];
         $endereco_cliente = $_POST["endereco-cliente"];
         $produto = $_POST["produto"];
@@ -42,11 +37,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         /* Instacia o novo item */
         $novo_item = new Item($nome_cliente, $descricao_produto, $endereco_cliente, $produto, $qtd_produto);
         
-        /* Salva o Item --- TEMPORARIO */
-        array_push($items_cadastrados, $novo_item);
+        /* Mude para verdadeiro para inicializar o banco de dados */
+        $inicializar = false;
         
+        /* Inicializa vetor vazio no banco de dados */
+        if($inicializar){
+            file_put_contents("banco_de_dados.db", serialize(array()));
+        }
+        
+        /* Salva os items cadastrados */
+        $banco_de_dados = unserialize(file_get_contents("banco_de_dados.db"));
+        array_push($banco_de_dados, $novo_item);
+        file_put_contents("banco_de_dados.db", serialize($banco_de_dados));
+    
         /* Codigo de acerto */
-        $mensagem_extra = count($items_cadastrados);
+        $mensagem_extra = "Numero ".count($banco_de_dados);
         $item_inserido = true;
     }
     

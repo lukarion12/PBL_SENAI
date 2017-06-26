@@ -27,7 +27,7 @@
             <ul class="nav navbar-nav">
                 <li <?php if(isset($inicio_ativo)) { echo "class=\"active\""; } ?>><a href="index.php"> Início </a></li>
                 <li <?php if(isset($adiciona_ativo)) { echo "class=\"active\""; } ?>><a href="adicionar_item.php"> Adicionar Item </a></li>
-                <li <?php if(isset($lista_items_ativo)) { echo "class=\"active\""; } ?>><a href="lista_items.php"> Listar Caminhões </a></li>
+                <li <?php if(isset($lista_items_ativo)) { echo "class=\"active\""; } ?>><a href="lista_items.php"> Listar Itens </a></li>
                 <li <?php if(isset($lista_caminhoes_ativo)) { echo "class=\"active\""; } ?>><a href="lista_caminhoes.php"> Listar Caminhões </a></li>
                 <!--<li><a href="#about">About</a></li>-->
                 <!--<li><a href="#contact">Contact</a></li>-->
