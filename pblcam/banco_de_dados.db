@@ -1,1 +1,1 @@
-a:2:{i:0;O:4:"Item":5:{s:12:"nome_cliente";s:5:"Lucas";s:17:"descricao_produto";s:4:"Test";s:16:"endereco_cliente";s:5:"terra";s:7:"produto";s:9:"televisao";s:11:"qtd_produto";i:1;}i:1;O:4:"Item":5:{s:12:"nome_cliente";s:8:"Jeferson";s:17:"descricao_produto";s:4:"Lima";s:16:"endereco_cliente";s:5:"terra";s:7:"produto";s:9:"televisao";s:11:"qtd_produto";i:1;}}
+a:1:{i:0;O:4:"Item":5:{s:12:"nome_cliente";s:4:"vaca";s:17:"descricao_produto";s:3:"kmm";s:16:"endereco_cliente";s:5:"terra";s:7:"produto";s:5:"fogao";s:11:"qtd_produto";i:13;}}
